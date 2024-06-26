@@ -1,0 +1,160 @@
+.messages-container {
+  width: 80%;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.date-filter-container {
+  text-align: center;
+}
+
+
+.date-filter {
+  margin: 20px auto;
+  display: block;
+}
+
+.check_msg {
+  background-color: #FFC55A;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 100px 0;
+}
+
+.table-message {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  color: black;
+}
+
+.table-message tr th {
+  background-color: #FFC55A;
+  padding: 20px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+}
+
+.table-message tr {
+  border: 1px solid #ddd;
+}
+
+.table-message th,
+.table-message td {
+  padding: .625em;
+}
+
+.table-message td {
+  word-wrap: break-word;
+}
+
+.table-message th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.button_tabel-message {
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-weight: normal;
+}
+
+  
+.table-message th.date-th {
+  font-size: .75em; 
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+  width: 10%; 
+}
+
+.table-message th.tele-th {
+  font-size: .75em; 
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+  width: 15%;
+}
+
+
+.table-message th.Fullname-th {
+  font-size: .75em; 
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+  width: 20%; 
+}
+  
+@media screen and (max-width: 600px) {
+  .table-message {
+    border: 0;
+  }
+
+  .table-message caption {
+    font-size: 1.3em;
+  }
+
+  .table-message thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .table-message tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  .table-message td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+
+  .table-message td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .table-message td:last-child {
+    border-bottom: 0;
+  }
+  .pagination {
+    position: static;
+    transform: none; 
+    width: auto; 
+    padding: 40px;
+    font-size: 12px;
+  }
+}
+  

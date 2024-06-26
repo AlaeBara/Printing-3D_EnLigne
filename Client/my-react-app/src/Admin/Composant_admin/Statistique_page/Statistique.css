@@ -1,0 +1,134 @@
+.statistique-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.statistique-item {
+    flex: 1 1 20%; 
+    max-width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+.statistique-image {
+    width: 50px;
+    height: 50px;
+}
+
+.statistique-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: white;
+    padding: 0 10px;
+}
+
+.statistique-title {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.statistique-number {
+    font-size: 30px;
+}
+
+.statistique-link {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.statistique-link a {
+    color: black;   
+}
+
+.first-item {
+    background-color: rgb(254, 185, 65);
+    border: 1px solid #FEB941;
+}
+
+.second-item {
+    background-color: rgb(255, 159, 102);
+    border: 1px solid #FF9F66;
+}
+
+.third-item {
+    background-color: rgb(255, 95, 0);
+    border: 1px solid #FF5F00;
+}
+
+.four-item {
+    background-color: #002379;
+    border: 1px solid #002379;
+}
+
+.first-item a {
+    color: #FEB941;
+}
+
+.second-item a {
+    color: #FF9F66;
+}
+
+.third-item a {
+    color: #FF5F00;
+}
+
+.four-item a {
+    color: #002379;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.chart-container .chart-item{
+    text-align: center;
+    width: 40%;
+}
+.chart-container .price-chart{
+    text-align: center;
+    width: 20%;
+}
+.chart-item-average{
+    text-align: center;
+    width: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .statistique-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistique-item {
+        width: 80%;
+    }
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .chart-container .chart-item{
+        width: 100%;
+    }
+    .chart-container .price-chart{
+        width: 80%;
+    }
+    .chart-item-average{
+        width: 100%;
+    }
+}

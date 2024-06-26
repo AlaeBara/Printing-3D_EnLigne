@@ -1,0 +1,70 @@
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: -20px;
+  left: 0;
+  width: 56px;
+  height: 100%;
+  transition: width 0.4s;
+  z-index: 1;
+}
+
+.sidebar.open {
+  width: 260px;
+  background-color: orange;
+}
+
+.sidebar .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+}
+
+.sidebar header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 6px;
+  background: rgb(180, 117, 0);
+}
+
+.burger {
+  width: 44px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: #f9f9f9;
+  font-size: 15px;
+  background: none;
+  border: none;
+}
+
+.sidebar header > img {
+  height: 150px;
+}
+
+.sidebar nav {
+  display: grid;
+  padding: 6px;
+  padding-top: 30px;
+  gap: 2px;
+  height: 100%; 
+  overflow: hidden;
+  color: #f9f9f9;
+}
+.nav-side-bar ul li{
+  padding: 15px;
+}
+.nav-side-bar ul li a{
+  color:#f9f9f9;
+  font-size: 1.2rem;
+}
+.sidebar:not(.open) nav {
+  height: 0; 
+  overflow: hidden;
+  padding: 0;
+}
+.Commandes-Terminer{
+  font-size: 28px;
+}

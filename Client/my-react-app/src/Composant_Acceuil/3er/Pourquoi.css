@@ -1,0 +1,109 @@
+.pourquoi-container {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+    position: relative;
+}
+
+  
+.pourquoi-image {
+    max-width: 30vw;
+    height: auto;
+    object-fit: cover;
+}
+  
+.pourquoi-content {
+    text-align: left;
+    color: black;
+    width: 40vw;
+    padding: 30px 0;
+}
+
+.pourquoi-content .titre{
+    font-size: 13px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.pourquoi-content h1{
+    font-size: 3rem;
+}
+
+.pourquoi-content .description{
+    font-size: 20px;
+    padding: 30px 0;
+    width: 40vw;
+}
+
+.pourquoi-content ul {
+    padding: 0 0 3rem 0;
+}
+
+.pourquoi-content ul li{
+    font-size: 20px;
+    padding: 15px 0;
+    color: #797C7F;
+    cursor: pointer;
+}
+.pourquoi-content ul li:hover{
+    cursor: pointer;
+}
+
+.pourquoi-content .demande{
+    padding: 20px 20px;
+    color:  white;
+    font-weight: normal;
+    border: 1px solid orange;
+    background-color: orange;
+    transition: 0.5s;
+}
+
+.pourquoi-content .demande:hover{
+    background-color: rgb(203, 132, 0);
+    border: 1px solid rgb(203, 132, 0);
+}
+
+
+@media (max-width: 1000px) {
+    .pourquoi-content h1{
+        font-size: 2rem;
+    }
+    .pourquoi-image {
+        max-width: 50vw;
+    }
+}
+@media (max-width: 800px) {
+    .pourquoi-container {
+        display: block;
+    }
+    .pourquoi-image {
+        max-width: 80vw;
+    }
+    .pourquoi-content {
+        width: 80vw;
+        padding: 20px 30px;
+    }
+    .pourquoi-content h1{
+        font-size: 1.5rem;
+    }
+    
+    .pourquoi-content .description{
+        font-size: 1rem;
+        width: 80vw;
+    }
+    .pourquoi-content ul li{
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    
+}
+  
+
+
+
+  
+
+  

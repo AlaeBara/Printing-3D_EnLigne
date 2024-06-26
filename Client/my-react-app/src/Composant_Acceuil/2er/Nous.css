@@ -1,0 +1,83 @@
+.container {
+  position: relative;
+  margin-top: clamp(30vh, 32vh, 80vh);
+}
+
+.title-container {
+  text-align: center;
+  margin-top: -50px; 
+}
+
+.p_nous{
+  color: #A5A6AA;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.title {
+  font-size: 3.5rem;
+  color: black;
+  margin-bottom: 20px;
+  font-weight:normal;
+  font-family: "Montserrat", sans-serif;
+}
+.title span{
+  color: orange;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.card {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+.card h3{
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card p {
+  margin-bottom: 10px;  
+  font-size: 16px;
+}
+
+.icon {
+  font-size: 4rem;
+  color: hsl(39, 100%, 50%);
+  margin-bottom: 10px;
+}
+
+
+.model {
+  width: 30%;
+  position: absolute;
+  left: -250px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.container:hover .model {
+  transform: translate(-20px, -20px); 
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}

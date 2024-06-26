@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+  
+body {
+    min-height: 100vh;
+    color: #fff;
+}
+  
+.print_page a {
+    color: #000000;
+    font-size: 1rem;
+}
+a:hover {
+    color: orange;
+}
+  
+header {
+    position: relative;
+    padding:  1.5rem;
+    box-sizing: border-box;
+}
+header .navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+header .navbar .logo img {
+    width: 60%;
+}
+header .navbar .print_page{
+    display: flex;
+    gap: 2rem;
+}
+header .navbar .toggle_print_page {
+    display: none;
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+  
+.action-btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.5s ease;
+}
+.action-btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+.action-btn:active {
+    scale: 0.95;
+}
+
+.dropdown_print {
+    height: 0;
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgb(0, 0, 0);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_print li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+.dropdown_print .action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dropdown_print.open {
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    header .navbar .action-btn, header .navbar .print_page{
+      display: none;
+    }
+    header .navbar .toggle-btn {
+      display: block;
+    }
+    header .dropdown_print {
+      display: block;
+    }
+    .dropdown_print {
+        margin-top: 30px;  
+        left: 2rem;
+        width: unset;
+    }
+    header .navbar {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+}
+@media screen and (max-width: 576px) {
+    .dropdown_print {
+      margin-top: 30px;  
+      left: 2rem;
+      width: unset;
+    }
+    .navbar .logo{
+        margin-left: -2rem;
+    }
+    
+   
+
+}

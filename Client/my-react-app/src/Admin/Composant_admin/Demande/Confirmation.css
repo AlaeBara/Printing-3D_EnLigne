@@ -1,0 +1,44 @@
+.confirmation-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.confirmation-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.confirmation-modal p {
+  color: black;
+}
+  
+.confirmation-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+  
+.confirmation-buttons button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.5 ease-out;
+}
+
+.confirmation-buttons button:hover {
+  background-color: orange;
+
+}
+  
+  
